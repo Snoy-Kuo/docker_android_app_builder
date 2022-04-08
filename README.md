@@ -19,10 +19,18 @@ Without pre-installed Gradle, SDK platforms, and SDK build-tools, makes the imag
 ## Test this Docker image locally.
 
  - install [Docker](https://www.docker.com/)
- - Pull the image and run a container: `docker run --name container1 snoykuo/android-app-builder:debian-2022`
- - Exec sh in the container: `docker exec -it container1 /bin/sh`
- - Clone a native Android project and cd into the project dir: `git clone https://github.com/Snoy-Kuo/hello_compose.git && cd "$(basename "$_" .git)"`
- - Build release version APK: `./gradlew assembleRelease`
+ - Pull the image and run a container. And exec sh in the container: 
+   ```
+   docker run --rm -it snoykuo/android-app-builder:debian-2022 /bin/sh
+   ```
+ - Clone a native Android project and cd into the project dir: 
+   ```
+   git clone https://github.com/Snoy-Kuo/hello_compose.git && cd "$(basename "$_" .git)"
+   ```
+ - Build release version APK: 
+   ```
+   ./gradlew assembleRelease
+   ```
    - This will download Gradle, SDK Build-Tools, SDK Platform for the first time.
 
 ## Build env
