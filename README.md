@@ -6,6 +6,8 @@ Without pre-installed Gradle, SDK platforms, and SDK build-tools, makes the imag
 
 ## debian-2022 Info
 
+- [Dockerfile](/debian-2022/Dockerfile)
+- [Dockerhub](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?name=debian-2022&page=1&ordering=last_updated)
 - Size: Compressed:796.04MB, downloded: 1.55GB
 - OS: Debian GNU/Linux 11 (bullseye)
 - JDK: openjdk version "11.0.14.1" 2022-02-08
