@@ -2,7 +2,9 @@
 
 Dockerfiles that provide Android app building environments. <br/>
 Without pre-installed Gradle, SDK platforms, and SDK build-tools, makes the image size smaller. 
- - [snoykuo/android-app-builder:debian-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=debian-2022)
+ - [latest](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=latest)
+   - latest is currently the same as debian-2022.
+ - [debian-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=debian-2022)
 
 ## debian-2022 Info
 
@@ -23,7 +25,7 @@ Without pre-installed Gradle, SDK platforms, and SDK build-tools, makes the imag
  - install [Docker](https://www.docker.com/)
  - Pull the image and run a container. And exec sh in the container: 
    ```
-   docker run --rm -it snoykuo/android-app-builder:debian-2022 /bin/sh
+   docker run --rm -it snoykuo/android-app-builder /bin/sh
    ```
  - Clone a native Android project and cd into the project dir: 
    ```
