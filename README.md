@@ -6,8 +6,8 @@ Without pre-installed Gradle, SDK platforms, and SDK build-tools, makes the imag
    - latest is currently the same as temurin11-2022.
  - [temurin11-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=temurin11-2022)  
  - [temurin8-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=temurin8-2022)  
- - [openjdk11-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=openjdk11-2022)  
- - [openjdk8-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=openjdk8-2022)  
+ - [jdk11-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=jdk11-2022)  
+ - [jdk8-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=jdk8-2022)  
  - [debian-2022](https://hub.docker.com/repository/docker/snoykuo/android-app-builder/tags?page=1&ordering=last_updated&name=debian-2022)
 
 ## temurin11-2022 Info
