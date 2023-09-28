@@ -1,5 +1,5 @@
-# base on 'eclipse-temurin:11.0.16_8-jdk-jammy' image
-FROM eclipse-temurin:11.0.16_8-jdk-jammy
+# base on 'openjdk:8-jdk-slim-bullseye' image
+FROM openjdk:8-jdk-slim-bullseye
 
 LABEL maintainer="snoykuo@gmail.com"
 
@@ -25,3 +25,5 @@ RUN yes | sdkmanager 'tools' > /dev/null
 # Create projects folder
 RUN mkdir /home/android_proj
 WORKDIR /home/android_proj
+
+#docker build -t snoykuo/android-app-builder:openjdk8-slim-bullseye . --no-cache

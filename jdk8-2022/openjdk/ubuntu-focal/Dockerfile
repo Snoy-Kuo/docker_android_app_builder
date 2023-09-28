@@ -1,5 +1,5 @@
-# base on 'eclipse-temurin:8u342-b07-jdk-jammy' image
-FROM eclipse-temurin:8u342-b07-jdk-jammy
+# base on 'snoykuo/openjdk:8-ubuntu-focal' image
+FROM snoykuo/openjdk:8-ubuntu-focal
 
 LABEL maintainer="snoykuo@gmail.com"
 
@@ -25,3 +25,5 @@ RUN yes | sdkmanager 'tools' > /dev/null
 # Create projects folder
 RUN mkdir /home/android_proj
 WORKDIR /home/android_proj
+
+#docker build -t snoykuo/android-app-builder:openjdk8-focal . --no-cache

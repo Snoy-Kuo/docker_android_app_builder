@@ -1,5 +1,5 @@
-# base on 'openjdk:8u342-jdk-slim' image
-FROM openjdk:8u342-jdk-slim
+# base on 'eclipse-temurin:11-jdk-focal' image
+FROM eclipse-temurin:11-jdk-focal
 
 LABEL maintainer="snoykuo@gmail.com"
 
@@ -25,3 +25,5 @@ RUN yes | sdkmanager 'tools' > /dev/null
 # Create projects folder
 RUN mkdir /home/android_proj
 WORKDIR /home/android_proj
+
+#docker build -t snoykuo/android-app-builder:temurin11-focal . --no-cache
