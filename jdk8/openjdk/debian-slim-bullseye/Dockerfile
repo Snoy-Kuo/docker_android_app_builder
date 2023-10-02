@@ -13,7 +13,7 @@ RUN apt-get update -qq && \
     apt-get install git wget unzip -qq -y > /dev/null 2>&1
 
 # Install Android commandline tools
-ARG cmdToolUrl="https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip"
+ARG cmdToolUrl="https://dl.google.com/android/repository/commandlinetools-linux-9123335_latest.zip"
 RUN mkdir --parents ${ANDROID_SDK_ROOT}/cmdline-tools && \
     wget --quiet --output-document=tools.zip ${cmdToolUrl} && \
     unzip -qq tools.zip  && \
