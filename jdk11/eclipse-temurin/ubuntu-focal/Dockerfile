@@ -16,9 +16,10 @@ RUN apt-get update -qq && \
 #8512546 7.0 ->jdk8
 #9123335 8.0 ->jdk8
 #9477386 9.0
-#9645777 10.0 ->jdk11
+#9862592 10.0 ->jdk11
 #10406996 11.0 -> jdk17
-ARG cmdToolUrl="https://dl.google.com/android/repository/commandlinetools-linux-9645777_latest.zip"
+ARG CMDLINE_VERSION_CODE="9862592"
+ARG cmdToolUrl="https://dl.google.com/android/repository/commandlinetools-linux-${CMDLINE_VERSION_CODE}_latest.zip"
 RUN mkdir --parents ${ANDROID_SDK_ROOT}/cmdline-tools && \
     wget --quiet --output-document=tools.zip ${cmdToolUrl} && \
     unzip -qq tools.zip  && \

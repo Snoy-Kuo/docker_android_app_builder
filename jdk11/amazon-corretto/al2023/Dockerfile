@@ -1,5 +1,5 @@
-# base on 'openjdk:11-jdk-slim-bullseye' image
-FROM openjdk:11-jdk-slim-bullseye
+# base on 'amazoncorretto:11-al2023' image
+FROM amazoncorretto:11-al2023
 
 LABEL maintainer="snoykuo@gmail.com"
 
@@ -8,11 +8,11 @@ ENV ANDROID_SDK_ROOT="/opt/android-sdk"
 
 WORKDIR /tmp
 
-# Install tools: git, wget, unzip
-RUN apt-get update -qq && \ 
-    apt-get install git wget unzip -qq -y > /dev/null 2>&1
+# install tools
+RUN yum install -y git unzip wget && \
+    yum clean all
 
-# Install Android commandline tools
+# Install Android commandline tools 
 #8512546 7.0 ->jdk8
 #9123335 8.0 ->jdk8
 #9477386 9.0
@@ -32,4 +32,4 @@ RUN yes | sdkmanager 'tools' > /dev/null
 RUN mkdir /home/android_proj
 WORKDIR /home/android_proj
 
-#docker build -t snoykuo/android-app-builder:openjdk11-slim-bullseye . --no-cache
+#docker build -t snoykuo/android-app-builder:corretto11-al2023 . --no-cache
