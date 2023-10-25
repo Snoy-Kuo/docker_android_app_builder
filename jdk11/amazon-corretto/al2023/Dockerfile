@@ -9,7 +9,7 @@ ENV ANDROID_SDK_ROOT="/opt/android-sdk"
 WORKDIR /tmp
 
 # install tools
-RUN yum install -y git unzip wget && \
+RUN yum install -y git unzip wget which && \
     yum clean all
 
 # Install Android commandline tools 
@@ -33,3 +33,6 @@ RUN mkdir /home/android_proj
 WORKDIR /home/android_proj
 
 #docker build -t snoykuo/android-app-builder:corretto11-al2023 . --no-cache
+
+#for apple silicon mac: 
+#docker buildx build --platform linux/amd64 -t "snoykuo/android-app-builder:corretto11-al2023" . --no-cache 
