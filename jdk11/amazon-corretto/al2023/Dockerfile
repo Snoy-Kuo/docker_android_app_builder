@@ -9,7 +9,7 @@ ENV ANDROID_SDK_ROOT="/opt/android-sdk"
 WORKDIR /tmp
 
 # install tools
-RUN yum install -y git unzip wget which && \
+RUN yum install -y git unzip wget which findutils && \
     yum clean all
 
 # Install Android commandline tools 
